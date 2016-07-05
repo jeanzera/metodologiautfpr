@@ -1,0 +1,168 @@
+\RequirePackage{fix-cm}
+\documentclass[smallextended]{svjour3}       % onecolumn (second format)
+\smartqed  % flush right qed marks, e.g. at end of proof
+%
+%\usepackage{graphicx}
+
+%Para funcionar o CITEP:
+\usepackage[square,sort]{natbib}
+
+%Para rodar em português com cedilha e hifenização certa.
+\usepackage{graphicx,url}
+\usepackage[brazil]{babel}   
+\usepackage[utf8]{inputenc}  
+%\usepackage[alf]{abntex2cite}
+
+%
+% Insert the name of "your journal" with
+\journalname{Data Min Knowl Disc}
+%
+\begin{document}
+	
+\title{Detecção de Fraudes: Uma Revisão Sistemática
+}
+\subtitle{}
+
+\titlerunning{Detecção de Fraudes: Uma Revisão Sistemática}
+
+\author{Jean Avila Rangel         \and
+	Maria Claudia Figueiredo Pereira Emer \and
+	Adolfo Gustavo Serra Seca Neto
+}
+
+\institute{Jean Avila Rangel
+\at Federal University of Technology - Paraná, 3165 Sete de Setembro Avenue, Curitiba, PR 80230-901, BRA
+\and
+Maria Claudia Figueiredo Pereira Emer \and Adolfo Gustavo Serra Seca Neto
+\at Academic Department of Informatics, Federal University of Technology - Paraná, 3165 Sete de Setembro Avenue, Curitiba, PR 80230-901, BRA
+\\\email{mciemer@gmail.com} 
+\\
+\and
+Adolfo Gustavo Serra Seca Neto \\\email{adolfo@dainf.ct.utfpr.edu.br}
+}
+	\date{Received: date / Accepted: date}
+	% The correct dates will be entered by the editor
+	\maketitle
+	
+	\begin{abstract}
+		Insert your abstract here. Include keywords, PACS and mathematical
+		subject classification numbers as needed.
+		\keywords{Fraud detection \and Anomaly detection \and Deception detection \and Standard deviation detection \and Detecção de fraude \and Detecção de anomalia \and Detecção de engano \and Detecção de desvio padrão}
+	\end{abstract}
+	
+\section{Introdução}
+
+Nesta seção são apresentados alguns conceitos básicos sobre os temas abordados nesta pesquisa, junto com as motivações, justificativas e objetivos encontrados.
+
+\subsection{Contexto}
+
+A detecção de fraudes é utilizada para resolver problemas variados, sendo geralmente utilizada para reduzir falhas de segurança em sistemas onde há gasto de recurso com usuários mal intencionados.
+
+Segundo \cite{Fawcett1997}, há muitas técnicas para detecção de fraudes. As mais difundidas e utilizadas são as que produzem detecções por meio de regras pré estabelecidas e as que realizam a comparação entre valores de dados. Estas classificações, ao longo do tempo, geraram ramificações em pesquisas.
+
+Detecção de fraude por meio de regras determina que uma fraude será detectada devido ao conhecimento que a equipe adquiriu observando fraudes recorrentes em outrora. A vantagem nesta técnica está em preditar como a fraude ocorre, porém tem como desvantagem a possibilidade de descobrir somente fraudes já conhecidas.
+
+O outro grande ramo na detecção de fraudes ocorre por meio de cálculos e comparação de valores. Como principal exemplo, um desvio no padrão comportamental de alguma variável pode ser identificado comparando seus dados com dados anteriores ou de outras variáveis similares. Sua principal vantagem é a utilização de algoritmos já conhecidos na literatura \citep{Fawcett1997}. O problema apresentado pela técnica é a possibilidade do indivíduo fraudador inserir dados fraudulentos de maneira em que o sistema não consiga o identificar como um usuário malicioso.
+
+\subsection{Motivação}
+O controle organizacional de uma empresa ou setor pode garantir a sua boa estabilidade. Soluções para detectar, prevenir e evitar fraudes podem se tornar uma ferramenta para auxiliar a economia de recursos \citep{809570}. 
+
+A detecção de fraudes vem sendo utilizada há muito tempo para controle organizacional e econômico \citep{Seyedhossein2010}. Em estudos realizados no estado da arte, houve uma grande apresentação sobre algoritmos para detectar fraudes em sistemas financeiros ou de cartão de crédito \citep{Chandola:2009:ADS:1541880.1541882} e \citep{Abdallah201690}.
+
+Em pesquisas realizadas em bases de dados procurando trabalhos realizados na área de detecção de fraude, notou-se a produção de muito material anteriormente ao ano de 2010, porém com um significativo aumento na porcentagem de publicações posteriores a 2010. Este fator indica o crescimento do interesse em pesquisar determinado assunto e é uma das motivações que o presente trabalho apresenta.
+
+\subsection{Justificativa}
+Em todo contexto organizacional, cada ambiente possui um tipo de tratamento e armazenamento de dados. Portanto, ambientes podem possuir dados organizados de maneira estável por induzirem normativas e tecnologias padronizadas ou fazer exatamente o contrário, possuindo dados desorganizados com poucas conexões lógicas.
+
+Para resolver o problema, técnicas e ferramentas para detectar fraudes em sistemas governamentais estão amplamente difundidas na literatura. Este trabalho busca encontrar relações entre as soluções apresentadas e verificar se existem lacunas onde a área ainda pode ser explorada.
+
+O problema computacional que ainda ocorre é a não detecção de todos os falsos negativos (onde ações fraudulentas não são detectadas), bem como a classificação equivocada de falsos positivos (ações legítimas caracterizadas, erroneamente, como fraudulentas). Identificar uma forma para reduzir a incidência de erros é uma importante contribuição para a área. 
+
+\subsection{Objeto de Estudo}
+O objeto de estudo do trabalho consiste em encontrar técnicas de detecção de fraude aplicáveis a contextos gerais e que apresentem bons resultados e desempenho. A eficácia e utilidade dos algoritmos computacionais serão analisadas e consideradas para realizar estudos futuros onde serão aplicadas comitantemente.
+
+\subsection{Objetivos}
+Neste seção são apresentados os objetivos que são almejados na finalização do trabalho.
+
+\subsubsection{Objetivo Geral}
+Este trabalho possui como objetivo geral realizar uma revisão sistemática em trabalhos e técnicas voltados para detecção de fraudes. Desta forma, algoritmos desenvolvidos para inspecionar desvio de padrões, comportamentos indevidos ou fraudes serão identificados e estudados através dos trabalhos publicados no Estado da Arte.
+
+\subsubsection{Objetivos Específicos}
+
+Para encaixar o objeto que está sendo estudado com o problema apresentado, pretende-se - após realizada a pesquisa entre trabalhos na área - encontrar uma ou um conjunto de técnicas apropriadas para resolver o problema computacional apresentado.
+
+Paralelamente com o objetivo geral, espera-se encontrar as carências que os trabalhos estudados demonstram. As falhas cometidas por autores passados sobre o assunto podem gerar novas pesquisas e um melhor aprofundamento sobre o tema. 
+
+Também se espera realizar uma revisão sistemática considerando os trabalhos que foram publicados após as ultimas revisões sistemáticas serem escritas.
+
+Todas as técnicas para detecção de fraudes que forem encontradas e consideradas relevantes serão apresentadas e descritas.
+
+\section{Materiais e Métodos de Pesquisa}
+\label{sec:1}
+
+Nesta seção serão apresentados os materiais e métodos que guiaram a pesquisa realizada. 
+
+A revisão da literatura foi baseada no trabalho apresentado por \cite{Kitchenham07guidelinesfor}, onde os elementos de pesquisa são definidos para, em seguida, a revisão ser realizada e seus resultados registrados como relatos.
+
+\subsection{Estratégia de pesquisa}
+\label{sec:2}
+
+Ao primeiro momento do trabalho de revisão sistemática, o planejamento da estratégia de pesquisa norteia a pesquisa em publicações na área abordada.
+
+Para a busca de publicações, foram considerados somente trabalhos na língua inglesa e publicados no período temporal entre 2006 e 2016. As palavras chave \emph{fraud detection}, \emph{deception detection} e \emph{anomaly detection} foram utilizadas para a busca, que obteve artigos selecionados com a leitura na respectiva ordem: título, resumo e artigo completo. 
+
+Foram selecionadas as bibliotecas digitais abaixo para realizar a pesquisa. O motivo da escolha foi a grande quantidade de material publicado com relevância científica.
+
+\begin{itemize}
+	\item \textsf{ACM Digital Library}\index{ACM Digital Library}\footnote{\url{http://dl.acm.org/}}
+	
+	\item \textsf{IEEE Xplore Digital Library}\index{IEEE Xplore Digital Library}\footnote{\url{http://ieeexplore.ieee.org/}}
+	
+	\item \textsf{ScienceDirect}\index{ScienceDirect}\footnote{\url{http://www.sciencedirect.com/}} 	
+	
+	\item \textsf{SpringerLink}\index{SpringerLink}\footnote{\url{http://link.springer.com/}}
+\end{itemize}
+
+
+\subsection{Processo de seleção dos periódicos}
+\label{sec:3}
+
+A tarefa para selecionar os periódicos pode ser visualizada no diagrama da Figura \ref{fig:diagrama}, onde as etapas foram divididas em início, desenvolvimento e conclusão. Na parte inicial, o tema é definido e publicações naquele tema são pesquisadas. 
+
+Após os artigos serem analisados, caso se encontre pouca base para a pesquisa, a tarefa de busca por artigos é refeita e somente após a estabilização de uma boa base para pesquisa, os trabalhos são estudados e os melhores são elencados.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.9\textwidth]{imagens/diagrama.jpg}
+	\caption{Diagrama de sequência indicando as etapas da pesquisa}
+	\label{fig:diagrama}
+\end{figure}
+
+\section{Cronograma}
+\label{sec:4}
+
+Nesta seção é apresentado o cronograma que gerenciou a revisão sistemática até o momento. 
+
+Conforme visto na Figura \ref{fig:cronograma}, o escopo do trabalho foi delimitado pelas tarefas: Definir tema; Definir objetivos, justificativa e motivação; Escolher o local para publicação; Elaborar o método de pesquisa; Revisar a literatura e selecionar trabalhos; Produzir artigo científico; e Publicar o artigo finalizado. 
+
+As tarefas foram divididas entre os meses de junho a setembro e receberam a classificação: Concluída ("OK", em verde); Em andamento ("Andam.", em amarelo); e Não iniciada ("Não Inic.", em vermelho). 
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=1\textwidth]{imagens/cronograma.jpg}
+	\caption{Cronograma do planejamento do projeto}
+	\label{fig:cronograma}
+\end{figure}
+	
+\section{Projeto de Pesquisa do Mestrado}
+\label{sec:5}
+
+Na finalização da revisão sistemática, espera-se a publicação dos resultados obtidos na revista Data Mining and Knowledge Discovery, a qual possui a classificação de qualidade Qualis B1, elencada pela CAPES em sua última análise. 
+
+	% BibTeX users please use one of
+	\bibliographystyle{spbasic}      % basic style, author-year citations
+	%\bibliographystyle{spmpsci}      % mathematics and physical sciences
+	%\bibliographystyle{spphys}       % APS-like style for physics
+	\bibliography{minhabibliografia}   % name your BibTeX data base
+	
+\end{document}

@@ -1,0 +1,42 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Abdallah et~al(2016)Abdallah, Maarof, and Zainal}]{Abdallah201690}
+Abdallah A, Maarof MA, Zainal A (2016) Fraud detection system: A survey.
+  Journal of Network and Computer Applications 68:90 -- 113,
+  \doi{http://dx.doi.org/10.1016/j.jnca.2016.04.007},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S1084804516300571}
+
+\bibitem[{Chan et~al(1999)Chan, Fan, Prodromidis, and Stolfo}]{809570}
+Chan PK, Fan W, Prodromidis AL, Stolfo SJ (1999) Distributed data mining in
+  credit card fraud detection. IEEE Intelligent Systems and their Applications
+  14(6):67--74, \doi{10.1109/5254.809570}
+
+\bibitem[{Chandola et~al(2009)Chandola, Banerjee, and
+  Kumar}]{Chandola:2009:ADS:1541880.1541882}
+Chandola V, Banerjee A, Kumar V (2009) Anomaly detection: A survey. ACM Comput
+  Surv 41(3):15:1--15:58, \doi{10.1145/1541880.1541882},
+  \urlprefix\url{http://doi.acm.org/10.1145/1541880.1541882}
+
+\bibitem[{Fawcett and Provost(1997)}]{Fawcett1997}
+Fawcett T, Provost F (1997) Adaptive fraud detection. Data Mining and Knowledge
+  Discovery 1(3):291--316, \doi{10.1023/A:1009700419189},
+  \urlprefix\url{http://dx.doi.org/10.1023/A:1009700419189}
+
+\bibitem[{Kitchenham and Charters(2007)}]{Kitchenham07guidelinesfor}
+Kitchenham B, Charters S (2007) Guidelines for performing systematic literature
+  reviews in software engineering
+
+\bibitem[{Seyedhossein and Hashemi(2010)}]{Seyedhossein2010}
+Seyedhossein L, Hashemi MR (2010) Mining information from credit card time
+  series for timelier fraud detection. In: Telecommunications (IST), 2010 5th
+  International Symposium on, pp 619--624, \doi{10.1109/ISTEL.2010.5734099}
+
+\end{thebibliography}
