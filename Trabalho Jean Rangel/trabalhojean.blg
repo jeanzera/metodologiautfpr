@@ -1,12 +1,5 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: trabalhojean.aux
 The style file: spbasic.bst
-Database file #1: minhabibliografia.bib
-Repeated entry---line 397 of file minhabibliografia.bib
- : @article{809570
- :                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 410 of file minhabibliografia.bib
- : @article{Fawcett1997
- :                     ,
-I'm skipping whatever remains of this entry
-(There were 2 error messages)
+Database file #1: minhabibliografia2.bib
+Warning--I didn't find a database entry for "Abdallah201690"
+(There was 1 warning)
