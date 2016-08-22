@@ -52,20 +52,20 @@ A detecção de fraudes vem sendo utilizada há muito tempo para controle organi
 
 O objetivo geral deste trabalho é realizar uma revisão sistemática em estudos relacionados à detecção de fraudes. Desta forma, sistemas desenvolvidos para inspecionar desvio de padrões, comportamentos indevidos ou fraudes serão identificados, categorizados e agrupados conforme as técnicas e áreas abordadas.
 
-Como objetivos específicos, este trabalho visa examinar se os estudos realizados em detecção de fraudes possuem abertura para áreas pouco ou não abordadas. Caso haja necessidade, categorizar possíveis trabalhos futuros em lacunas no assunto.
+Como objetivos específicos, este trabalho visa examinar se os estudos desenvolvidos em detecção de fraudes possuem abertura para áreas pouco ou não abordadas. Caso haja necessidade, categorizar possíveis trabalhos futuros em lacunas no assunto.
 
-Além disso, este trabalho conta como objetivo específico categorizar as técnicas mais utilizadas para detectar fraudes e as áreas mais abordadas. Espera-se realizar uma revisão sistemática considerando os trabalhos publicados após a elaboração das ultimas revisões sistemáticas do Estado da Arte.
+Além disso, este trabalho conta como objetivo específico categorizar as técnicas mais utilizadas para detectar fraudes e as áreas mais abordadas. Espera-se desenvolver uma revisão sistemática considerando os trabalhos publicados após a elaboração das ultimas revisões sistemáticas do Estado da Arte.
 
 Após realizar a revisão da literatura, este artigo se propõe a elencar como os autores descreveram e categorizaram as áreas de detecção de fraudes e quais são tecnologias as mais utilizadas para cada contexto.
 
 
-A realização da revisão sistemática proposta por este trabalho obtém motivação devido à crescente expansão do Estado da Arte no assunto. Em pesquisas realizadas em bases de dados por trabalhos realizados na área de detecção de fraude, notou-se a produção de muito material anteriormente ao ano de 2010, porém com um significativo aumento na porcentagem de publicações posteriores a 2010. Este fator indica o crescimento do interesse da comunidade científica em pesquisar o assunto.
+A revisão sistemática proposta por este trabalho obtém motivação devido à crescente expansão do Estado da Arte no assunto. Em pesquisas feitas em bases de dados por trabalhos executados na área de detecção de fraude, notou-se a produção de muito material anteriormente ao ano de 2010, porém com um significativo aumento na porcentagem de publicações posteriores a 2010. Este fator indica o crescimento do interesse da comunidade científica em pesquisar o assunto.
 
 Junto com a importância do assunto verificada após os estudos, grande parte dos autores destacaram que o problema computacional ocorrido em todos os casos é a não detecção de todos os falsos negativos (onde ações fraudulentas não são detectadas), bem como a classificação equivocada de falsos positivos (ações legítimas caracterizadas, erroneamente, como fraudulentas). Desta forma, novas abordagens são necessárias para a continuidade do tema.
 
-Idealmente, o custo para detectar uma fraude deve ser menor do que o gasto gerado por ela. Para ilustrar, uma empresa fictícia que contem um milhão de dados em um arquivo pode possuir 1\% de falsos alarmes. Esta quantia representará para a equipe responsável em avaliar fraudes cerca de 10.000 avisos. Alocar funcionários para verificar estas informações terá um custo considerável para a empresa. É importante ressaltar que a maioria dos estudos indicou que a verificação final se algum dado representa ou não uma fraude é uma tarefa recomendada para um ser humano, que pode ser auxiliado por uma ferramenta computacional, como um algoritmo. 
+Idealmente, o custo para detectar uma fraude deve ser menor do que o gasto gerado por ela. Para ilustrar, uma empresa fictícia que contem um milhão de dados em um arquivo pode possuir 1\% de falsos alarmes. Esta quantia representará para a equipe responsável em avaliar fraudes cerca de 10.000 avisos. Alocar funcionários para verificar estas informações terá um custo considerável para a empresa. É importante ressaltar que a maioria dos estudos indicou que a verificação final se algum dado representa, ou não, uma fraude é uma tarefa recomendada para um ser humano, que pode ser auxiliado por uma ferramenta computacional, como um algoritmo. 
 
-Embora cartões de crédito e sistemas de telecomunicações tenham sido criados há décadas, ainda estão em crescimento de utilização, resultando no aumento de possíveis fraudes e valores podendo gerar prejuízos \cite{Abdallah2016}. No início dos anos 2000, as palavra chave \emph{fraud detection} já contava com mais de 80 patentes registradas \cite{Bolton2002}.
+Embora cartões de crédito e sistemas de telecomunicações tenham sido criados há décadas, ainda estão em crescimento de utilização, resultando no aumento de possíveis fraudes e valores podendo gerar prejuízos \citep{Abdallah2016}. No início dos anos 2000, as palavra chave \emph{fraud detection} já contava com mais de 80 patentes registradas \citep{Bolton2002}.
 
 Acrescentando à motivação e justificativa, em trabalhos futuros após este artigo, pretende-se estudar e desenvolver (ou utilizar) uma ferramenta ou técnica para rastrear fraudes em setores públicos. Com isto, técnicas de detecção de fraudes seriam aplicadas para descobrir problemas em dados de auditoria e controle em órgãos públicos.
 
@@ -74,11 +74,15 @@ A seguir será descrito o referencial teórico que situará genericamente o assu
 \section{Referencial Teórico}
 \label{sec:2}
 
+Esta seção fornece um panorama geral no assunto de detecção de fraudes, situando o problema e relacionado com pesquisas.
+
+De acordo com a Associação dos Examinadores de Fraudes Certificados (Association of Certified Fraud Examiners), a definição de fraude é: o uso de forma incorreta de algum setor ou recurso para o aumento dos benefícios individuais \citep{Abdallah2016}.
+
 A área de detecção de fraudes obteve início em pesquisas nas áreas da estatística e da matemática. No âmbito computacional, \cite{Fawcett1997} realizaram uma das primeiras e principais abordagens encontradas na literatura. Em seus estudos, analisaram e criaram um sistema para detecção de fraudes em sistemas de telecomunicação. Em seus estudos, constaram que indivíduos fraudadores estão constantemente mudando suas táticas para burlar sistemas, que devem adaptáveis às novas situações.
 
 Posteriormente, utilizando dados reais fornecidos por companhias bancárias, \cite{809570} realizaram um trabalho em detecção de fraude em cartões de crédito e obtiveram um aumento nos seus resultados em comparação com técnicas de detecções de fraudes utilizadas anteriormente. Em suas constatações, indicaram que os métodos mais potentes para detectar fraudes são utilizados em cartões de crédito, porém as organizações não costumam revelar suas tecnologias de forma aberta, pois possíveis fraudadores podem se aproveitar do conhecimento e utilizar sistemas com má fé.
 
-Segundo \cite{Fawcett1997}, há muitas técnicas para detecção de fraudes. As mais difundidas e utilizadas são as que produzem detecções por meio de regras pré estabelecidas e as que realizam a comparação entre valores de dados. Estas classificações geraram duas ramificações iniciais em pesquisas da área.
+Segundo \cite{Fawcett1997}, há muitas técnicas para detecção de fraudes. As mais difundidas e utilizadas são as que produzem detecções por meio de regras pré estabelecidas e as que elaboram a comparação entre valores de dados. Estas classificações geraram duas ramificações iniciais em pesquisas da área.
 
 Uma das ramificações, a detecção de fraude por meio de regras, determina que uma fraude será detectada devido ao conhecimento que a equipe adquiriu observando fraudes recorrentes em outrora. A vantagem nesta técnica está em preditar como a fraude ocorre. A desvantagem está na possibilidade de descobrir somente fraudes já conhecidas.
 
@@ -89,11 +93,32 @@ Provost, ao comentar sobre o trabalho de \cite{Bolton2002}, indica que é import
 \section{Metodologia}
 \label{sec:3}
 
-Ao primeiro momento do trabalho de revisão sistemática, o planejamento da estratégia de pesquisa norteia a pesquisa em publicações na área abordada.
+Ao primeiro momento do trabalho de revisão sistemática, o planejamento da estratégia de pesquisa norteia a pesquisa em publicações na área abordada. Esta seção é destinada a detalhar o processo metodológico utilizado para orientar a revisão sistemática proposta.
 
-A revisão da literatura foi baseada no trabalho apresentado por \cite{Kitchenham07guidelinesfor}, onde os elementos de pesquisa são definidos para realizar e relatar a revisão.
+A revisão da literatura foi baseada no trabalho apresentado por \cite{Kitchenham07guidelinesfor}, onde os elementos de pesquisa são definidos para desenvolver e relatar a revisão.
 
-Foram selecionadas as bibliotecas digitais abaixo para realizar a pesquisa. O motivo da escolha foi a grande quantidade de material publicado com relevância científica.
+Para ajudar a selecionar o material para esta revisão sistemática, questões de pesquisa (QP) foram desenvolvidas, seguindo o modelo de revisões sistemáticas proposto por \cite{Kitchenham07guidelinesfor}. As questões de pesquisa estão descritas a seguir:
+
+\begin{itemize}
+	\item \textbf{QP1:}\textit{"Quais são as áreas de detecção de fraudes mais estudadas na literatura?"};
+	 
+	\
+	\item \textbf{QP2:}\textit{"Como a literatura categoriza as técnicas de detecção de fraudes?"};
+	
+	\
+	\item \textbf{QP3:}\textit{"Quais problemas aparecem com mais frequência segundo os autores?"};
+	
+	\
+	\item \textbf{QP4:}\textit{"Como os autores fizeram para testar e validar suas pesquisas?"};
+	
+	\
+	\item \textbf{QP5:}\textit{"Em que área há pouca abordagem no estudo de detecção de fraudes?"};
+	
+	\
+	\item \textbf{QP6:}\textit{"Há novas abordagens e espaços para futuras pesquisas na área?"}.
+\end{itemize}
+
+Foram selecionadas as bibliotecas digitais abaixo para embasar a pesquisa. O motivo da escolha foi a grande quantidade de material publicado com relevância científica.
 
 \begin{itemize}
 	\item \textsf{ACM Digital Library}\index{ACM Digital Library}\footnote{\url{http://dl.acm.org/}}
@@ -141,10 +166,13 @@ Na primeira fase da pesquisa, foi considerada a utilização da combinação das
 \begin{itemize}
 	\item \emph{fraud detection AND state of art OR systematic review OR meta analysis};
 	
+	\
 	\item \emph{anomaly detection AND survey OR state of art OR systematic review OR meta analysis};
 	
+	\
 	\item \emph{outlier detection AND survey OR state of art OR systematic review OR meta analysis}; 	
 	
+	\
 	\item \emph{deception detection AND survey OR state of art OR systematic review OR meta analysis}.
 \end{itemize}
 
@@ -152,40 +180,92 @@ Os resultados contendo os temas \emph{anomaly, outlier} e \emph{deception detect
 
 Outras palavras que podem significar revisões sistemáticas na língua inglesa são \emph{state of art, systematic review} ou \emph{meta analysis}. Contudo, a utilização dessas palavras chave também se mostrou obsoleta em comparação à palavra \emph{survey}, pois trouxeram muitos resultados duplicados ou em áreas indesejadas para esta revisão sistemática, como processamento de imagens, biologia, eletrônica e segurança de redes de computadores.
 
-No início da revisão sistemática, foram encontrados 101 artigos com potencial para estruturar este trabalho. Destes, dois não estavam disponíveis para consulta. Após a leitura do título dos 99 artigos restantes, 49 foram excluídos. Posteriormente, seguindo os critérios de exclusão, foi realizada a leitura do resumo dos artigos. Destes, 22 trabalhos foram selecionados para realizar a revisão sistemática proposta por este trabalho.
-
-\section{Estado da Arte}
-\label{sec:4}
+No início da revisão sistemática, foram encontrados 101 artigos com potencial para estruturar este trabalho. Destes, dois não estavam disponíveis para consulta. Após a leitura do título dos 99 artigos restantes, 49 foram excluídos. Posteriormente, seguindo os critérios de exclusão, foi realizada a leitura do resumo dos artigos. Destes, 23 trabalhos foram selecionados para prosseguir a revisão sistemática proposta por este trabalho. Os trabalhos estão divididos entre conferências e revistas, conforme demonstra a Tabela \ref{tab:conferenciasrevistas}.
 
 % For tables use
 \begin{table}
 	% table caption is above the table
-	\caption{Please write your table caption here}
-	\label{tab:1}       % Give a unique label
+	\caption{Artigos publicados em conferências e revistas}
+	\label{tab:conferenciasrevistas}       % Give a unique label
 	% For LaTeX tables use
-	\begin{tabular}{lll}
+	\begin{tabular}[!Ht]{lll}
 		\hline\noalign{\smallskip}
-		first & second & third  \\
+		Categoria & Quantia & Porcentagem  \\
 		\noalign{\smallskip}\hline\noalign{\smallskip}
-		number & number & number \\
-		number & number & number \\
+		Conferência & 12 & 52\% \\
+		Revista & 11 & 48\% \\
 		\noalign{\smallskip}\hline
 	\end{tabular}
 \end{table}
 
+\section{Estado da Arte}
+\label{sec:4}
+
+Esta seção irá apresentar os estudos de autores na área de detecção de fraudes. Conforme descrito na seção de metodologia, foram considerados artigos que realizaram um levantamento na literatura sobre o tema.
+
+Em uma recente publicação, \cite{Abdallah2016} elencaram as áreas mais presentes em trabalhos anteriores e as tecnologias mais utilizadas em cada contexto. Segundo os autores, fraudes ocorridas em bancos compõem 53\% dos estudos, seguido seguradoras (31\%), comércio eletrônico (10\%) e sistemas de telecomunicações (6\%). O gráfico com as informações está demonstrado na Figura \ref{fig:fraudespopulares}. 
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.9\textwidth]{imagens/fraudespopulares.jpg}
+	\caption{Áreas com maior pesquisa em detecção de fraudes. Fonte: \cite{Abdallah2016}}
+	\label{fig:fraudespopulares}
+\end{figure}
+
+
+\begin{itemize}
+	\item \textbf{QP1:}\textit{"Quais são as áreas de detecção de fraudes mais estudadas na literatura?"};
+	
+	\textbf{RQP1:}
+	
+	\
+	\item \textbf{QP2:}\textit{"Como a literatura categoriza as técnicas de detecção de fraudes?"};
+	
+	\textbf{RQP2:}
+	
+	\
+	\item \textbf{QP3:}\textit{"Quais problemas aparecem com mais frequência segundo os autores?"};
+	
+	\textbf{RQP3:}
+	
+	\
+	\item \textbf{QP4:}\textit{"Como os autores fizeram para testar e validar suas pesquisas?"};
+	
+	\textbf{RQP4:}
+	
+	\
+	\item \textbf{QP5:}\textit{"Em que área há pouca abordagem no estudo de detecção de fraudes?"};
+	
+	\textbf{RQP5:}
+	
+	\
+	\item \textbf{QP6:}\textit{"Há novas abordagens e espaços para futuras pesquisas na área?"}.
+	
+	\textbf{RQP6:}
+	
+\end{itemize}
+
 \section{Discussão}
 \label{sec:5}
 
-O principal desafio apontado pela maioria dos autores diz respeito à evolução das técnicas utilizadas pelos fraudadores para burlar os sistemas. Em estudos realizados por corporações bancárias \cite{Bolton2002}, o comportamento esperado por fraudadores demonstrou uma mutação quando os criminosos entenderam as técnicas para detectá-los. Indivíduos que em outrora utilizavam cartões de crédito somente para realizar compras com a intenção de não pagá-las, perceberam que poderiam pagar as compras iniciais para serem classificados como usuários comuns, e assim possuir maior margem para fraudar no futuro.
+Nas seções anteriores, foi possível observar o estado das pesquisas relacionadas à detecção de fraudes. Conforme as observações realizadas, esta seção visa discutir os fatores em comum entre os trabalhos.
 
-Entendendo o problema da mutação nas técnicas criminosas, constata-se que a engenharia de software tradicional possui um processo de produção padrão, onde ocorre etapas de análise, projeto, codificação, implementação e testes \cite{sommervillesoftware}. Dessa maneira, a constante evolução das características de usuários fraudulentos pode se tornar um desafio para englobar um modelo de desenvolvimento tradicional de software. 
+O principal desafio apontado pela maioria dos autores diz respeito à evolução das técnicas utilizadas pelos fraudadores para burlar os sistemas. Em estudos constatados por corporações bancárias, o comportamento esperado por fraudadores demonstrou uma mutação quando os criminosos entenderam as técnicas para detectá-los \citep{Bolton2002}. Indivíduos que em outrora utilizavam cartões de crédito somente para efetuar compras com a intenção de não pagá-las, perceberam que poderiam pagar as compras iniciais para serem classificados como usuários comuns, e assim possuir maior margem para fraudar no futuro.
+
+Entendendo o problema da mutação nas técnicas criminosas, constata-se que a engenharia de software tradicional possui um processo de produção padrão, onde ocorre etapas de análise, projeto, codificação, implementação e testes \citep{sommervillesoftware}. Dessa maneira, a constante evolução das características de usuários fraudulentos pode se tornar um desafio para englobar um modelo de desenvolvimento tradicional de software. 
+
+Ao analisar os trabalhos desenvolvidos na área de detecção de fraudes, não foi possível constatar a presença de um conjunto de dados padrão que pudesse ser utilizado por diversos algoritmos para computação e comparação de valores. Em seus trabalhos, os autores utilizaram dos mais variados tipos de dados, sendo possível identificar duas grandes características em comum: houveram autores que utilizaram dados controlados, possivelmente criado por eles; e dados reais, onde utilizaram suas técnicas e algoritmos em informações providas de empresas e problemas reais. 
+
+O empecilho, porém, está no fato em que os autores comparam os seus algoritmos com os já existentes na literatura utilizando os dados que lhes são convenientes. Esta revisão sistemática propõe como sugestão para trabalhos futuros desenvolver e apresentar um conjunto de dados que possa servir como um \emph{benchmark}, onde diversos pesquisadores realizem seus estudos nos mesmos ambientes, para fim de padronização dos testes. 
 
 \section{Conclusão}
 \label{sec:6}
 
+Este trabalho realizou a revisão sistemática na área de detecção de fraudes. Pesquisas realizadas para dar o panorama na área foram estudadas e discutidas. Em conclusão, o trabalho indica que a área, embora muito estudada, ainda concentra amplo poder para novas pesquisas. Obtendo os principais artigos publicados na área, constatou-se um grande crescimento de publicações na área acadêmica após o ano de 2010. Isto demonstra que o assunto está em crescimento de interesse.
+
 Em trabalhos futuros, almeja-se continuar a pesquisa em detecção de fraudes, aplicando técnicas para auxiliar a auditoria e controle de órgãos públicos a descobrir irregularidades em dados.
 
-Na finalização da revisão sistemática, espera-se a publicação dos resultados obtidos na revista Data Mining and Knowledge Discovery, a qual possui a classificação de qualidade Qualis B1, elencada pela CAPES em sua última análise. 
+Após a finalização da revisão sistemática, espera-se a publicação dos resultados obtidos na revista Data Mining and Knowledge Discovery, a qual possui a classificação de qualidade Qualis B1, elencada pela CAPES em sua última análise. 
 
 	% BibTeX users please use one of
 	\bibliographystyle{spbasic}
