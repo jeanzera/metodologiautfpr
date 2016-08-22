@@ -180,7 +180,7 @@ Os resultados contendo os temas \emph{anomaly, outlier} e \emph{deception detect
 
 Outras palavras que podem significar revisões sistemáticas na língua inglesa são \emph{state of art, systematic review} ou \emph{meta analysis}. Contudo, a utilização dessas palavras chave também se mostrou obsoleta em comparação à palavra \emph{survey}, pois trouxeram muitos resultados duplicados ou em áreas indesejadas para esta revisão sistemática, como processamento de imagens, biologia, eletrônica e segurança de redes de computadores.
 
-No início da revisão sistemática, foram encontrados 101 artigos com potencial para estruturar este trabalho. Destes, dois não estavam disponíveis para consulta. Após a leitura do título dos 99 artigos restantes, 49 foram excluídos. Posteriormente, seguindo os critérios de exclusão, foi realizada a leitura do resumo dos artigos. Destes, 23 trabalhos foram selecionados para prosseguir a revisão sistemática proposta por este trabalho. Os trabalhos estão divididos entre conferências e revistas, conforme demonstra a Tabela \ref{tab:conferenciasrevistas}.
+No início da revisão sistemática, foram encontrados 101 artigos com potencial para estruturar este trabalho. Destes, dois não estavam disponíveis para consulta. Após a leitura do título dos 99 artigos restantes, 49 foram excluídos. Posteriormente, seguindo os critérios de exclusão, foi realizada a leitura do resumo dos artigos. Destes, 22 trabalhos foram selecionados para prosseguir a revisão sistemática proposta por este trabalho. Os trabalhos estão divididos entre conferências e revistas, conforme demonstra a Tabela \ref{tab:conferenciasrevistas}.
 
 % For tables use
 \begin{table}
@@ -192,8 +192,8 @@ No início da revisão sistemática, foram encontrados 101 artigos com potencial
 		\hline\noalign{\smallskip}
 		Categoria & Quantia & Porcentagem  \\
 		\noalign{\smallskip}\hline\noalign{\smallskip}
-		Conferência & 12 & 52\% \\
-		Revista & 11 & 48\% \\
+		Conferência & 12 & 55\% \\
+		Revista & 10 & 45\% \\
 		\noalign{\smallskip}\hline
 	\end{tabular}
 \end{table}
@@ -212,6 +212,21 @@ Em uma recente publicação, \cite{Abdallah2016} elencaram as áreas mais presen
 	\label{fig:fraudespopulares}
 \end{figure}
 
+De acordo com o \emph{Basel Committee on Bank Supervision}, existem fraudes de nível interno e externo. Fraudes em nível interno se referem às ocorridas quando empregados cometem fraudes contra a própria organização. Fraudes de nível externo correspondem a clientes ou indivíduos distantes das organizações que obtém proveito de falhas variadas \citep{Abdallah2016}.
+
+Ainda conforme \cite{Abdallah2016}, as fraudes cometidas no contexto geral estão a crescer. De 2011 para 2016, obteve-se um acréscimo de 15\% nas fraudes cometidas em sistemas de telecomunicações.
+
+\cite{Flegel2010} indicam que na indústria, a abordagem de detecção de fraudes não reflete à grande importância que a literatura dá para o tema. Fora do contexto acadêmico, a maior parte do processo de descobrir uma fraude é realizado por um humano, que utiliza ferramentas populares para controle de dados, como planilhas eletrônicas \emph{Microsoft Excel} ou \emph{OpenOffice Calc}. 
+
+Os autores ressaltam que as tecnologias para detectar e coibir tentativas de invasão em sistemas de redes de computadores não podem ser comparadas - ou suas técnicas utilizadas - com detecção de fraudes em dados financeiros. \cite{Flegel2010} diferenciam as características de dados financeiros como estruturas definidas de uma forma diferente com usuários tentando atacar \emph{hardwares} de computadores.
+
+\cite{Bansal2016} identificam as abordagens da detecção de fraudes como aplicações para detecção de fraudes em: cartões de crédito, seguradoras, sistema interno de empresas, sistema médico e de saúde e equipamentos industriais. O artigo apresenta as tecnologias para resolver os problemas apresentados, com enfoque na detecção de \emph{outliers}. 
+
+Categorizando os \emph{outliers}, os autores denominam: \emph{Point Outliers, Contextual Outliers} e \emph{Collective Outliers}, que são os \emph{outliers} individuais, fora de padrão por contexto ou que realizam uma formação de cartel fora do padrão esperado, respectivamente. \cite{Bansal2016} ainda indicam que para detectá-los, as formas mais difundidas na literatura são: \emph{Distance based outlier detection, Clustering based outlier detection, Density based outlier detection} e \emph{Depth based outlier detection}. As características de cada técnica será apresentada posteriormente neste trabalho.
+
+\cite{Pejic-Bach2010} e \cite{Raj2011} analisaram trabalhos que utilizaram algoritmos destinados a detectar fraudes. Com a pesquisa, constatam uma grande frequência na utilização de determinadas abordagens, como as técnicas de redes neurais, lógica \emph{fuzzy}, algoritmos genéticos, computação evolucionária, (ou evolutiva) programação genética, e otimização por nuvem de partículas. \cite{Raj2011} constataram, além das técnicas apresentadas anteriormente, os métodos de aprendizado por Inferência Bayesiana, Teoria de Evidência de Dempster-Shafer, \emph{BLAST-SSAHA Hybridization} e Modelo oculto de Markov.
+
+\subsection{Resposta às principais perguntas}
 
 \begin{itemize}
 	\item \textbf{QP1:}\textit{"Quais são as áreas de detecção de fraudes mais estudadas na literatura?"};
@@ -249,6 +264,22 @@ Em uma recente publicação, \cite{Abdallah2016} elencaram as áreas mais presen
 \label{sec:5}
 
 Nas seções anteriores, foi possível observar o estado das pesquisas relacionadas à detecção de fraudes. Conforme as observações realizadas, esta seção visa discutir os fatores em comum entre os trabalhos.
+
+% For tables use
+\begin{table}
+	% table caption is above the table
+	\caption{Áreas mais abordadas pelos autores e as técnicas mais utilizadas.}
+	\label{tab:XX}       % Give a unique label
+	% For LaTeX tables use
+	\begin{tabular}[!Ht]{lll}
+		\hline\noalign{\smallskip}
+		Autores & Áreas & Técnicas  \\
+		\noalign{\smallskip}\hline\noalign{\smallskip}
+		XX & XX & XX\% \\
+		XX & XX & XX\% \\
+		\noalign{\smallskip}\hline
+	\end{tabular}
+\end{table}
 
 O principal desafio apontado pela maioria dos autores diz respeito à evolução das técnicas utilizadas pelos fraudadores para burlar os sistemas. Em estudos constatados por corporações bancárias, o comportamento esperado por fraudadores demonstrou uma mutação quando os criminosos entenderam as técnicas para detectá-los \citep{Bolton2002}. Indivíduos que em outrora utilizavam cartões de crédito somente para efetuar compras com a intenção de não pagá-las, perceberam que poderiam pagar as compras iniciais para serem classificados como usuários comuns, e assim possuir maior margem para fraudar no futuro.
 
