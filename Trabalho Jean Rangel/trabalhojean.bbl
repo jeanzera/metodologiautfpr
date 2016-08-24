@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{#1}}
 \providecommand{\urlprefix}{URL }
@@ -44,6 +44,11 @@ Flegel U, Vayssi{\`{e}}re J, Bitz G (2010) {A State of the Art Survey of Fraud
   Detection Technology}. Insider Threats in Cyber Security 49:73--84,
   \doi{10.1007/978-1-4419-7133-3},
   \urlprefix\url{http://link.springer.com/10.1007/978-1-4419-7133-3{\$}\backslash{\$}nhttp://link.springer.com/chapter/10.1007/978-1-4419-7133-3{\{}{\_}{\}}4}
+
+\bibitem[{Kitchenham(2004)}]{Kitchenham2004}
+Kitchenham B (2004) {Procedures for performing systematic reviews}. Keele, UK,
+  Keele University 33(TR/SE-0401):28, \doi{10.1.1.122.3308},
+  \urlprefix\url{http://csnotes.upm.edu.my/kelasmaya/pgkm20910.nsf/0/715071a8011d4c2f482577a700386d3a/{\$}FILE/10.1.1.122.3308[1].pdf\backslashnhttp://tests-zingarelli.googlecode.com/svn-history/r336/trunk/2-Disciplinas/MetodPesquisa/kitchenham{\_}2004.pdf}
 
 \bibitem[{Kitchenham and Charters(2007)}]{Kitchenham07guidelinesfor}
 Kitchenham B, Charters S (2007) {Guidelines for performing Systematic
