@@ -10,42 +10,34 @@
 
 \bibitem[{Abdallah et~al(2016)Abdallah, Maarof, and Zainal}]{Abdallah2016}
 Abdallah A, Maarof MA, Zainal A (2016) {Fraud detection system: A survey}.
-  Journal of Network and Computer Applications 68:90--113,
-  \doi{10.1016/j.jnca.2016.04.007}
+  Journal of Network and Computer Applications 68:90--113
 
 \bibitem[{Ahmed et~al(2015)Ahmed, Mahmood, and Islam}]{Ahmed2015}
 Ahmed M, Mahmood AN, Islam MR (2015) {A survey of anomaly detection techniques
-  in financial domain}. Future Generation Computer Systems 55:278--288,
-  \doi{10.1016/j.future.2015.01.001},
-  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0167739X15000023}
+  in financial domain}. Future Generation Computer Systems 55:278--288
 
 \bibitem[{Akoglu et~al(2015)Akoglu, Tong, and Koutra}]{Akoglu2015}
 Akoglu L, Tong H, Koutra D (2015) {Graph based anomaly detection and
-  description: A survey}, vol~29. \doi{10.1007/s10618-014-0365-y},
-  \eprint{1404.4679}
+  description: A survey}, vol~29
 
 \bibitem[{Allan and Zhan(2010)}]{Allan2010}
 Allan T, Zhan J (2010) {Towards fraud detection methodologies}. 2010 5th
   International Conference on Future Information Technology, FutureTech 2010 -
-  Proceedings \doi{10.1109/FUTURETECH.2010.5482631}
+  Proceedings
 
-\bibitem[{Bansal et~al(2016)Bansal, Gaur, and Singh}]{Bansal2016}
-Bansal R, Gaur N, Singh SN (2016) Outlier detection: Applications and
-  techniques in data mining. In: 2016 6th International Conference - Cloud
-  System and Big Data Engineering (Confluence), pp 373--377,
-  \doi{10.1109/CONFLUENCE.2016.7508146}
+\bibitem[{Bansal(2016)}]{Bansal2016}
+Bansal R (2016) {Outlier Detection : Applications and Techniques in Data
+  Mining}
 
 \bibitem[{Bauder et~al(2016)Bauder, Khoshgoftaar, and Seliya}]{Bauder2016}
-Bauder R, Khoshgoftaar TM, Seliya N (2016) A survey on the state of healthcare
-  upcoding fraud analysis and detection. Health Services and Outcomes Research
-  Methodology pp 1--25, \doi{10.1007/s10742-016-0154-8},
-  \urlprefix\url{http://dx.doi.org/10.1007/s10742-016-0154-8}
+Bauder R, Khoshgoftaar TM, Seliya N (2016) {A survey on the state of healthcare
+  upcoding fraud analysis and detection}. Health Services and Outcomes Research
+  Methodology pp 1--25
 
 \bibitem[{Bolton et~al(2002)Bolton, Hand, Provost, Breiman, Bolton, and
   Hand}]{Bolton2002}
 Bolton RJ, Hand DJ, Provost F, Breiman L, Bolton RJ, Hand DJ (2002)
-  {Statistical Fraud Detection: A Review}. Statistical Science 17(3):235--255,
-  \doi{10.1214/ss/1042727940}
+  {Statistical Fraud Detection: A Review}. Statistical Science 17(3):235--255
 
 \bibitem[{Branco(2016)}]{Branco2016}
 Branco P (2016) {A Survey of Predictive Modeling on Imbalanced Domains}
@@ -54,57 +46,42 @@ Branco P (2016) {A Survey of Predictive Modeling on Imbalanced Domains}
 \bibitem[{Chan et~al(1999)Chan, Fan, Prodromidis, and Stolfo}]{809570}
 Chan PK, Fan W, Prodromidis AL, Stolfo SJ (1999) {Distributed data mining in
   credit card fraud detection}. IEEE Intelligent Systems and their Applications
-  14(6):67--74, \doi{10.1109/5254.809570}
+  14(6):67--74
 
 \bibitem[{Chandola et~al(2009)Chandola, Banerjee, and
   Kumar}]{Chandola:2009:ADS:1541880.1541882}
 Chandola V, Banerjee A, Kumar V (2009) {Anomaly Detection: A Survey}. ACM
-  Comput Surv 41(3):15:1----15:58, \doi{10.1145/1541880.1541882},
-  \urlprefix\url{http://doi.acm.org/10.1145/1541880.1541882}
+  Comput Surv 41(3):15:1----15:58
 
 \bibitem[{Edge and {Falcone Sampaio}(2009)}]{Edge2009}
 Edge ME, {Falcone Sampaio} PR (2009) {A survey of signature based methods for
-  financial fraud detection}. Computers and Security 28(6):381--394,
-  \doi{10.1016/j.cose.2009.02.001},
-  \urlprefix\url{http://dx.doi.org/10.1016/j.cose.2009.02.001}
+  financial fraud detection}. Computers and Security 28(6):381--394
 
 \bibitem[{Fawcett and Provost(1997)}]{Fawcett1997}
 Fawcett T, Provost F (1997) {Adaptive Fraud Detection}. Data Mining and
-  Knowledge Discovery 1(3):291--316, \doi{10.1023/A:1009700419189},
-  \urlprefix\url{http://dx.doi.org/10.1023/A:1009700419189}
+  Knowledge Discovery 1(3):291--316
 
 \bibitem[{Feily et~al(2009)Feily, Shahrestani, and Ramadass}]{Feily2009}
 Feily M, Shahrestani A, Ramadass S (2009) {A survey of botnet and botnet
   detection}. Proceedings - 2009 3rd International Conference on Emerging
-  Security Information, Systems and Technologies, SECURWARE 2009 pp 268--273,
-  \doi{10.1109/SECURWARE.2009.48}
+  Security Information, Systems and Technologies, SECURWARE 2009 pp 268--273
 
 \bibitem[{Flegel et~al(2010)Flegel, Vayssi{\`{e}}re, and Bitz}]{Flegel2010}
 Flegel U, Vayssi{\`{e}}re J, Bitz G (2010) {A State of the Art Survey of Fraud
-  Detection Technology}. Insider Threats in Cyber Security 49:73--84,
-  \doi{10.1007/978-1-4419-7133-3},
-  \urlprefix\url{http://link.springer.com/10.1007/978-1-4419-7133-3{\$}\backslash{\$}nhttp://link.springer.com/chapter/10.1007/978-1-4419-7133-3{\{}{\_}{\}}4}
+  Detection Technology}. Insider Threats in Cyber Security 49:73--84
 
 \bibitem[{Gullkvist and Jokipii(2013)}]{Gullkvist2013}
 Gullkvist B, Jokipii A (2013) {Perceived importance of red flags across fraud
-  types}. Critical Perspectives on Accounting 24(1):44--61,
-  \doi{10.1016/j.cpa.2012.01.004},
-  \urlprefix\url{http://dx.doi.org/10.1016/j.cpa.2012.01.004}
+  types}. Critical Perspectives on Accounting 24(1):44--61
 
-\bibitem[{Kanapickienė et~al(2015)Kanapickienė, Grundienė, Gimzauskiene,
-  Duoba, Pavie, Pinnington, Vilkas, Kanapickiene, Grundiene, Kanapickienė, and
-  Grundienė}]{Kanapickiene2015}
-Kanapickienė R, Grundienė {\v{Z}}, Gimzauskiene E, Duoba K, Pavie X,
-  Pinnington A, Vilkas M, Kanapickiene R, Grundiene {\v{Z}}, Kanapickienė R,
-  Grundienė {\v{Z}} (2015) {The Model of Fraud Detection in Financial
-  Statements by Means of Financial Ratios}. Procedia - Social and Behavioral
-  Sciences 213:321--327, \doi{10.1016/j.sbspro.2015.11.545},
-  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S1877042815059005}
+\bibitem[{Kanapickienė and Grundienė(2015)}]{Kanapickiene2015}
+Kanapickienė R, Grundienė {\v{Z}} (2015) {The Model of Fraud Detection in
+  Financial Statements by Means of Financial Ratios}. Procedia - Social and
+  Behavioral Sciences 213:321--327
 
 \bibitem[{Kitchenham(2004)}]{Kitchenham2004}
 Kitchenham B (2004) {Procedures for performing systematic reviews}. Keele, UK,
-  Keele University 33(TR/SE-0401):28, \doi{10.1.1.122.3308},
-  \urlprefix\url{http://csnotes.upm.edu.my/kelasmaya/pgkm20910.nsf/0/715071a8011d4c2f482577a700386d3a/{\$}FILE/10.1.1.122.3308[1].pdf\backslashnhttp://tests-zingarelli.googlecode.com/svn-history/r336/trunk/2-Disciplinas/MetodPesquisa/kitchenham{\_}2004.pdf}
+  Keele University 33(TR/SE-0401):28
 
 \bibitem[{Kitchenham and Charters(2007)}]{Kitchenham07guidelinesfor}
 Kitchenham B, Charters S (2007) {Guidelines for performing Systematic
@@ -112,69 +89,61 @@ Kitchenham B, Charters S (2007) {Guidelines for performing Systematic
 
 \bibitem[{Li et~al(2008)Li, Huang, Jin, and Shi}]{Li2008}
 Li J, Huang KY, Jin J, Shi J (2008) {A survey on statistical methods for health
-  care fraud detection}. Health care management science 11(3):275--287,
-  \doi{10.1007/s10729-007-9045-4}
+  care fraud detection}. Health care management science 11(3):275--287
 
 \bibitem[{Liu and Chawla(2015)}]{Liu2015}
 Liu Y, Chawla S (2015) {Social Media Anomaly Detection : Challenges and
   Solutions}. Proceedings of the 21th ACM SIGKDD International Conference on
-  Knowledge Discovery and Data Mining pp 2317--2318,
-  \doi{10.1145/2783258.2789990},
-  \urlprefix\url{http://dl.acm.org/citation.cfm?doid=2783258.2789990{\$}\backslash{\$}nhttp://delivery.acm.org/10.1145/2790000/2789990/p2317-liu.pdf?ip=14.139.155.213{\{}{\&}{\}}id=2789990{\{}{\&}{\}}acc=OPEN{\{}{\&}{\}}key=045416EF4DDA69D9.4A4590D5C9BCB165.4D4702B0C3E38B35.6D218144511F3437{\{}{\&}{\}}CFID=706664552{\{}{\&}{\}}CFT}
+  Knowledge Discovery and Data Mining pp 2317--2318
 
 \bibitem[{Mahmood and Afzal(2013)}]{Mahmood2013}
 Mahmood T, Afzal U (2013) {Security Analytics: Big Data Analytics for
   Cybersecurity}. 2013 2nd National Conference on Information Assurance (NCIA)
-  pp 129--134, \doi{10.1109/NCIA.2013.6725337}
+  pp 129--134
 
 \bibitem[{Pejic-Bach(2010)}]{Pejic-Bach2010}
 Pejic-Bach M (2010) {Profiling intelligent systems applications in fraud
   detection and prevention: Survey of research articles}. ISMS 2010 -
   UKSim/AMSS 1st International Conference on Intelligent Systems, Modelling and
-  Simulation pp 80--85, \doi{10.1109/ISMS.2010.26}
+  Simulation pp 80--85
 
 \bibitem[{Perlich et~al(2007)Perlich, Rosset, Lawrence, and
   Zadrozny}]{Perlich2007}
 Perlich C, Rosset S, Lawrence RD, Zadrozny B (2007) {High-quantile modeling for
   customer wallet estimation and other applications}. Proceedings of the 13th
   ACM SIGKDD international conference on Knowledge discovery and data mining -
-  KDD '07 p 977, \doi{10.1145/1281192.1281297},
-  \urlprefix\url{http://portal.acm.org/citation.cfm?doid=1281192.1281297}
+  KDD '07 p 977
 
 \bibitem[{Raj and Portia(2011)}]{Raj2011}
 Raj SBE, Portia aA (2011) {Analysis on credit card fraud detection methods}.
   2011 International Conference on Computer, Communication and Electrical
-  Technology (ICCCET) pp 152--156, \doi{10.1109/ICCCET.2011.5762457}
+  Technology (ICCCET) pp 152--156
 
 \bibitem[{Rebahi et~al(2011)Rebahi, Nassar, Magedanz, and Festor}]{Rebahi2011}
 Rebahi Y, Nassar M, Magedanz T, Festor O (2011) {A survey on fraud and service
   misuse in voice over IP (VoIP) networks}. Information Security Technical
-  Report 16(1):12--19, \doi{10.1016/j.istr.2010.10.012},
-  \urlprefix\url{http://dx.doi.org/10.1016/j.istr.2010.10.012}
+  Report 16(1):12--19
 
 \bibitem[{Seyedhossein and Hashemi(2010)}]{Seyedhossein2010}
 Seyedhossein L, Hashemi MR (2010) {Mining information from credit card time
   series for timelier fraud detection}. In: Telecommunications (IST), 2010 5th
-  International Symposium on, pp 619--624, \doi{10.1109/ISTEL.2010.5734099}
+  International Symposium on, pp 619--624
 
 \bibitem[{Sharma and Mangat(2015)}]{Sharma2015}
 Sharma S, Mangat V (2015) {Technology and Trends to Handle Big Data: Survey}.
   2015 Fifth International Conference on Advanced Computing {\{}{\&}{\}}
-  Communication Technologies pp 266--271, \doi{10.1109/ACCT.2015.121},
-  \urlprefix\url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=7079091}
+  Communication Technologies pp 266--271
 
 \bibitem[{Sommerville(2011)}]{sommervillesoftware}
-Sommerville I (2011) Engenharia de Software, 9th edn. Pearson Brasil
+Sommerville I (2011) {Engenharia de Software}, 9th edn. Pearson Brasil
 
 \bibitem[{Wang(2010)}]{Wang2010}
 Wang S (2010) {A comprehensive survey of data mining-based accounting-fraud
   detection research}. 2010 International Conference on Intelligent Computation
-  Technology and Automation, ICICTA 2010 1:50--53,
-  \doi{10.1109/ICICTA.2010.831}, \eprint{1009.6119}
+  Technology and Automation, ICICTA 2010 1:50--53
 
 \bibitem[{Yu et~al(2016)Yu, Qiu, Wen, Lin, and Liu}]{Yu2016}
 Yu R, Qiu H, Wen Z, Lin CY, Liu Y (2016) {A Survey on Social Media Anomaly
-  Detection}. arXiv preprint 18(1):18,
-  \urlprefix\url{http://arxiv.org/abs/1601.01102}, \eprint{1601.01102}
+  Detection}. arXiv preprint 18(1):18
 
 \end{thebibliography}
