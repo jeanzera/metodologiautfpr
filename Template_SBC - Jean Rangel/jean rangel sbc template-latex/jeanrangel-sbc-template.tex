@@ -88,6 +88,19 @@ A área de detecção de fraudes possui sua base estabelecida no campo da mineração
 
 A primeira utilização de mineração de dados foi de maneira empírica em setores do comércio, pois as empresas possuíam dados de compra de seus clientes e com o cruzamento das informações conseguiam predizer o perfil do usuário. 
 
+A Figura \ref{fig:kdd} apresenta a compreensão de \cite{Fayyad:1996:DMK:257938.257942} sobre descoberta de conhecimento em base de dados. 
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=1.0\textwidth]{imagens/kdd.jpg}
+	\caption{Mineração de dados para ganho de informações. Fonte: \cite{Fayyad:1996:DMK:257938.257942}}
+	\label{fig:kdd}
+\end{figure}
+
+Na imagem, possuímos um processo evolutivo para a mineração de dados. Inicialmente, os dados de um conjunto são selecionados e separados em conjuntos menores, para melhor manuseio e visibilidade. Em seguida, os dados são pré-processados e transformados para serem legíveis por algoritmos computacionais na etapa de mineração de dados. Após os resultados serem exibidos, um ser humano com conhecimento sobre a base de dados inicial avalia as informações fornecidas pelos algoritmos, para adquirir algum conhecimento que não se possuía até então.
+
+A maior utilização computacional do processo ocorre na etapa de mineração de dados, onde algoritmos complexos são executados para gerar informações. Todavia, o maior gasto temporal se encontra em outras etapas, pois são nelas que é necessário o trabalho manual de um humano para trabalhar com os dados.
+
 Utilizando como exemplo uma rede de supermercados, o caixa eletrônico registra todos os produtos que os clientes compram na sexta-feira, e como padrão, muitos adquirem itens em comum. Como estratégia de \emph{marketing}, o supermercado pode lucrar mais que o normal após possuir a informação desse novo tipo de perfil identificado, pois pode usar essa informação a seu favor.
 
 A área de detecção de fraudes obteve início em pesquisas nas áreas da estatística e da matemática. No âmbito computacional, \cite{Fawcett1997} realizaram uma das primeiras e principais abordagens encontradas na literatura. Em seus estudos, analisaram e criaram um sistema para detecção de fraudes em sistemas de telecomunicação. Em seus estudos, constaram que indivíduos fraudadores estão constantemente mudando suas táticas para burlar sistemas, que devem ser adaptáveis às novas situações.
@@ -314,14 +327,16 @@ A tabela \ref{tab:tecnologias} representa as abordagens e técnicas mais utilizad
 	% For LaTeX tables use
 	\begin{tabular}{lll}
 		\hline\noalign{\smallskip}
-		Método & Categoria & Técnica  \\
+		\textbf{Método} & \textbf{Categoria} & \textbf{Técnica}  \\
 		\noalign{\smallskip}\hline\noalign{\smallskip}
 		Supervisionado & Classificação & Árvores de decisões \\
 		&  & Redes neurais artificiais \\
 		&  & Modelo oculto de Markov \\
 		&  &  Inferência Bayesiana\\
+		\noalign{\smallskip}\hline\noalign{\smallskip}
 		Não-supervisionado & Clusterização & Lógica Fuzzy \\
-		&  & K-Means  \\
+		&  & K-Means (média) \\
+		&  & K-NN (vizinhos próximos) \\
 		\noalign{\smallskip}\hline
 	\end{tabular}
 \end{table}
@@ -387,7 +402,115 @@ Após o término da revisão sistemática, as questões de pesquisas levantadas na se
 \begin{itemize}
 	\item \textbf{QP1:}\textit{ Quais são as áreas de detecção de fraudes mais estudadas na literatura?}
 	
-	A maioria dos trabalhos obteve as seguintes áreas de fraudes em comum: bancos, dispositivos de telecomunicação, seguradoras, comércio eletrônico, leilões virtuais, mercado de ações e dados jurídicos. Os autores que citaram determinadas áreas estão relacionados na tabela \ref{tab:areasabordadas}.
+	A maioria dos trabalhos obteve as seguintes áreas de fraudes em comum: bancos, dispositivos de telecomunicação, seguradoras, comércio eletrônico, leilões virtuais, mercado de ações e dados jurídicos. Os autores, com seus respectivos países, que citaram determinadas áreas estão relacionados nas tabelas \ref{tab:areasabordadas} e \ref{tab:areasabordadas2}.
+	
+	% For tables use
+	\begin{table}[!h]
+		% table caption is above the table
+		\caption{Áreas mais abordadas pelos autores no período entre 2006 e 2016.}
+		\label{tab:areasabordadas}       % Give a unique label
+		% For LaTeX tables use
+		\begin{tabular}{lll}
+			\hline\noalign{\smallskip}
+			\textbf{Áreas} & \textbf{Autores} & \textbf{País} \\
+			\noalign{\smallskip}\hline\noalign{\smallskip}
+			Bancos ou cartões   
+			& \cite{Abdallah2016} & Malásia \\
+			de crédito
+			& \cite{Ahmed2015}  &  Austrália \\
+			& \cite{Akoglu2015}  & EUA \\
+			& \cite{Allan2010}  & EUA \\
+			& \cite{Bansal2016} & Índia \\ 
+			& \cite{Branco2016}  & Portugal \\
+			& \cite{Edge2009} & Reino Unido \\
+			& \cite{Pejic-Bach2010} & Croácia \\
+			& \cite{Perlich2007}  & EUA e Brasil \\
+			& \cite{Raj2011} & Índia \\
+			\noalign{\smallskip}\hline\noalign{\smallskip}
+			Seguradoras 
+			& \cite{Abdallah2016} & Malásia \\
+			& \cite{Ahmed2015} & Austrália \\
+			& \cite{Akoglu2015}  & EUA \\
+			& \cite{Bansal2016} & Índia \\
+			& \cite{Branco2016} & Portugal \\
+			& \cite{Pejic-Bach2010} & Croácia \\
+			\noalign{\smallskip}\hline\noalign{\smallskip}
+			Cuidados da saúde 
+			& \cite{Abdallah2016} & Malásia \\
+			& \cite{Bansal2016} & Índia \\
+			& \cite{Bauder2016} & EUA \\
+			& \cite{Li2008}  & EUA \\
+			& \cite{Pejic-Bach2010} & Croácia \\
+			\noalign{\smallskip}\hline\noalign{\smallskip}
+			Telecomunicação 
+			& \cite{Abdallah2016} & Malásia \\
+			& \cite{Ahmed2015} & Austrália \\
+			& \cite{Akoglu2015}  & EUA \\
+			& \cite{Allan2010}  & EUA \\
+			& \cite{Branco2016} & Portugal \\
+			& \cite{Pejic-Bach2010} & Croácia \\
+			\noalign{\smallskip}\hline\noalign{\smallskip}
+			Comércio eletrônico 
+			& \cite{Abdallah2016} & Malásia \\
+			& \cite{Akoglu2015}  & EUA \\
+			& \cite{Branco2016} & Portugal \\
+			& \cite{Pejic-Bach2010} & Croácia \\
+			\noalign{\smallskip}\hline\noalign{\smallskip}
+			Leilões virtuais 
+			& \cite{Abdallah2016} & Malásia \\
+			& \cite{Pejic-Bach2010} & Croácia \\
+			\noalign{\smallskip}\hline\noalign{\smallskip}
+			Mercados de ações 
+			& \cite{Ahmed2015} & Austrália \\
+			& \cite{Pejic-Bach2010} & Croácia \\
+			\noalign{\smallskip}\hline
+		\end{tabular}
+	\end{table}
+	
+	% For tables use
+	\begin{table}[!h]
+		% table caption is above the table
+		\caption{Áreas mais abordadas pelos autores no período entre 2006 e 2016.}
+		\label{tab:areasabordadas2}       % Give a unique label
+		% For LaTeX tables use
+		\begin{tabular}{lll}				\hline\noalign{\smallskip}
+			\textbf{Áreas} & \textbf{Autores} & \textbf{País} \\
+			\noalign{\smallskip}\hline\noalign{\smallskip}
+			Dados financeiros
+			& \cite{Akoglu2015}  & EUA \\
+			ou empresariais
+			& \cite{Allan2010} & EUA \\
+			& \cite{Branco2016} & Portugal \\
+			& \cite{Edge2009} & Reino Unido \\
+			& \cite{Flegel2010} & Alemanha e Austrália \\
+			& \cite{Gullkvist2013} & Finlândia \\
+			& \cite{Kanapickiene2015} & Lituânia \\
+			& \cite{Pejic-Bach2010} & Croácia \\
+			& \cite{Wang2010} & China \\	
+			\noalign{\smallskip}\hline\noalign{\smallskip}
+			Redes sociais 
+			& \cite{Feily2009} & Malásia \\
+			& \cite{Liu2015} & EUA e Austrália \\
+			& \cite{Rebahi2011} & Alemanha e França \\
+			& \cite{Yu2016} & EUA \\
+			\noalign{\smallskip}\hline\noalign{\smallskip}
+			Big data 
+			& \cite{Mahmood2013} & Paquistão \\
+			& \cite{Sharma2015} & Índia \\
+			\noalign{\smallskip}\hline\noalign{\smallskip}
+			Redes de computadores 
+			& \cite{Akoglu2015}  & EUA \\
+			& \cite{Allan2010} & EUA \\
+			& \cite{Branco2016} & Portugal \\
+			\noalign{\smallskip}\hline\noalign{\smallskip}
+			Equipamentos industriais 
+			& \cite{Bauder2016} & EUA \\
+			\noalign{\smallskip}\hline\noalign{\smallskip}
+			Terrorismo 
+			& \cite{Allan2010} & EUA \\
+			\noalign{\smallskip}\hline
+		\end{tabular}
+	\end{table}
 	
 	\
 	\item \textbf{QP2:}\textit{ Como a literatura categoriza as técnicas de detecção de fraudes?}
@@ -416,59 +539,6 @@ Após o término da revisão sistemática, as questões de pesquisas levantadas na se
 	
 \end{itemize}
 
-% For tables use
-\begin{table}[!h]
-	% table caption is above the table
-	\caption{Áreas mais abordadas pelos autores no período entre 2006 e 2016.}
-	\label{tab:areasabordadas}       % Give a unique label
-	% For LaTeX tables use
-	\begin{tabular}{lll}
-		\hline\noalign{\smallskip}
-		Áreas & Autores  \\
-		\noalign{\smallskip}\hline\noalign{\smallskip}
-		Bancos ou cartões de crédito & \cite{Abdallah2016}, \cite{Bansal2016}, \cite{Ahmed2015},  &  \\
-		& \cite{Edge2009}, \cite{Allan2010},  &  \\
-		& \cite{Pejic-Bach2010}, \cite{Raj2011}, \cite{Perlich2007},  &  \\
-		& \cite{Kanapickiene2015}, \cite{Branco2016},  &  \\
-		& \cite{Akoglu2015}  &  \\
-		
-		Seguradoras & \cite{Abdallah2016}, \cite{Bansal2016}, \cite{Ahmed2015}, &  \\
-		& \cite{Pejic-Bach2010}, \cite{Branco2016}, \cite{Akoglu2015}  &  \\
-		
-		Cuidados da saúde & \cite{Abdallah2016}, \cite{Bauder2016}, \cite{Li2008},  &  \\
-		& \cite{Bansal2016}, \cite{Pejic-Bach2010} &  \\
-		
-		Telecomunicação & \cite{Abdallah2016}, \cite{Ahmed2015}, &  \\
-		& \cite{Allan2010},  &  \\
-		& \cite{Pejic-Bach2010}, \cite{Pejic-Bach2010}, &  \\
-		& \cite{Branco2016}, \cite{Akoglu2015}  &  \\
-		
-		Comércio eletrônico & \cite{Abdallah2016}, \cite{Pejic-Bach2010},  &  \\
-		& \cite{Branco2016}, \cite{Akoglu2015}  &  \\
-		
-		Leilões virtuais & \cite{Abdallah2016} &  \\
-		
-		Mercados de ações & \cite{Ahmed2015} &  \\
-		
-		Dados financeiros & \cite{Flegel2010}, \cite{Edge2009},  &  \\
-		ou empresariais & \cite{Gullkvist2013}, \cite{Allan2010},   &  \\
-		& \cite{Pejic-Bach2010}, \cite{Wang2010}, \cite{Branco2016},  &  \\
-		& \cite{Akoglu2015}  &  \\
-		
-		Redes sociais & \cite{Yu2016}, \cite{Liu2015}, \cite{Feily2009},  &  \\
-		& \cite{Rebahi2011} &  \\
-		
-		Big data & \cite{Sharma2015}, \cite{Mahmood2013} &  \\
-		
-		Redes de computadores & \cite{Allan2010}, \cite{Branco2016}, \cite{Akoglu2015}  &  \\
-		
-		Equipamentos industriais & \cite{Bauder2016} &  \\
-		
-		Terrorismo & \cite{Allan2010} &  \\
-		\noalign{\smallskip}\hline
-	\end{tabular}
-\end{table}
-
 \section{Discussão}
 \label{sec:5}
 
@@ -486,6 +556,14 @@ Ao analisar os trabalhos desenvolvidos na área de detecção de fraudes, não foi p
 
 O problema, porém, está no fato em que os autores comparam os seus algoritmos com os já existentes na literatura utilizando os dados que lhes são convenientes. Esta revisão sistemática propõe como sugestão para trabalhos futuros desenvolver e apresentar um conjunto de dados que possa servir como um \emph{benchmark}, que diversos pesquisadores possam realizar seus estudos nos mesmos ambientes ou com as mesmas condições, com a finalidade de obter testes padronizados. 
 
+O tempo de processamento dos algoritmos pode ser ignorado para alguns casos, como a maioria dos algoritmos de clusterização. Em alguns sistemas de classificação, como os que necessitam do aviso imediato de alguma fraude (transação bancária, telefonema clonado, etc), o tempo computacional pode ser relevante.
+
+Um dos fatores que contribui com o aumento do processamento computacional é a maldição da dimensionalidade, onde muitos atributos desprezíveis no conjunto de dados levam o algoritmo a ter menor eficiência \cite{Hodge2004}.
+
+A tarefa de selecionar os atributos que levarão para o algoritmo algum acréscimo de informação para um melhor resultado deve executada por um humano. Nenhum algoritmo de pré-processamento é inteligente o suficiente para compreender os dados de uma base e selecionar automaticamente os dados que achar relevante. 
+
+Portanto, na etapa de pré-processamento das informações, uma pessoa que possui conhecimento sobre os dados da base pode realizar a seleção de atributos. A revisão sistemática deste trabalho não encontrou na literatura estudos específicos para orientar a etapa de pré processamento. Das ferramentas mais utilizada para mineração de dados (Weka\index{Weka}\footnote{\url{http://www.cs.waikato.ac.nz/ml/weka/}} e linguagem R\index{R}\footnote{\url{https://www.r-project.org/}}), nenhuma apresenta um \emph{framework} dedicado eficiente para pré-processamento.
+
 \section{Conclusão}
 \label{sec:6}
 
@@ -502,8 +580,6 @@ Junto com a importância do assunto verificada após os estudos, grande parte dos 
 Em trabalhos futuros, pretende-se continuar a pesquisa em detecção de fraudes, aplicando técnicas para auxiliar órgãos públicos a descobrir irregularidades em dados de auditoria e controle.
 
 Como em praticamente todos os casos de decisão entre dados fraudulentos e não-fraudulentos é atribuída para uma pessoa humana, os algoritmos e técnicas servem como ferramentas. Com a revisão sistemática, não foram encontrados conjuntos de ações gerais para os detectores de fraudes utilizarem das ferramentas disponíveis na literatura, pois os autores geralmente publicam suas descobertas de maneira individual e com uma segregação entre o acadêmico e o profissional.
-
-\section{ }
 
 \bibliographystyle{sbc}
 %\bibliography{sbc-template}
