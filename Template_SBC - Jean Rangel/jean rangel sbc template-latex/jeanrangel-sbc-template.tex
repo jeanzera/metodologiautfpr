@@ -5,6 +5,7 @@
 \usepackage{graphicx,url}
 
 \usepackage[brazil]{babel}   
+\usepackage[]{subfigure}
 \usepackage[latin1]{inputenc}  
 
      
@@ -92,7 +93,7 @@ A Figura \ref{fig:kdd} apresenta a compreensão de \cite{Fayyad:1996:DMK:257938.2
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=1.0\textwidth]{imagens/kdd.jpg}
+	\includegraphics[width=1\textwidth]{imagens/kdd.jpg}
 	\caption{Mineração de dados para ganho de informações. Fonte: \cite{Fayyad:1996:DMK:257938.257942}}
 	\label{fig:kdd}
 \end{figure}
@@ -236,7 +237,7 @@ Conforme demonstra a Figura \ref{fig:diagramaexlusaoartigos}, no início da revis
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.8\textwidth]{imagens/diagramaexclusaoartigos.jpg}
+	\includegraphics[width=0.9\textwidth]{imagens/diagramaexclusaoartigos.jpg}
 	\caption{Etapas de exclusão dos artigos, seguindo critérios.}
 	\label{fig:diagramaexlusaoartigos}
 \end{figure}
@@ -293,21 +294,15 @@ Categorizando os \emph{outliers}, os autores denominam: \emph{Point Outliers, Co
 
 \subsection{Técnicas de detecção de fraudes}
 
-\subsubsection{Tipos comuns de anomalias em dados}
-
-\cite{Ahmed2015} identificam em sua revisão da literatura em detecção de anomalias os três tipos de anomalias mais comuns.
-
-Os grupos são similares aos grupos identificados por \cite{Bansal2016}. \cite{Ahmed2015} indicam: anomalia pontual, onde um dado está fora do padrão de um conjunto de dados; a anomalia contextual, onde um dado está fora do padrão de um conjunto de dados considerando o seu contexto (usando como exemplo, novamente, o acréscimo de gastos com cartões de crédito no dia 24 de dezembro, que é considerado uma exceção por contexto pelas compras natalinas); e anormalidades coletivas, onde espécies de cartéis e conjuntos de dados são identificados fora do padrão dos demais dados.
-
-\subsubsection{Mineração de dados por aprendizado supervisionado (algoritmos classificadores) e não-supervisionado (algoritmos de agrupamento)}
+\subsubsection{Mineração de dados por aprendizado supervisionado (algoritmos de classificação) e não-supervisionado (algoritmos de agrupamento)}
 
 Focando-se em detecções de anomalias, \cite{Ahmed2015} limitam-se a trabalhar com dados não-supervisionados, que são dados sem classificações a respeito de seus conteúdos. 
 
-Os autores indicam que a aplicação de técnicas de clusterização (como o algoritmo mais popular para a área, o \emph{K-Means}) é comum para detectar anomalias nesses tipos de dados. Além das classificações apresentadas por \cite{Abdallah2016}, o estudo indica a fraude no mercado de ações como um nicho entre os criminosos, onde pessoas que possuem informações internas antes que o público geral as utilizam para realizar mudanças nos lucros. 
+Os autores indicam que a aplicação de técnicas de clusterização (como o algoritmo mais popular para a área, o \emph{K-Means}) é comum para detectar anomalias nesses tipos de dados. Além das classificações apresentadas por \cite{Ahmed2015}, o estudo indica a fraude no mercado de ações como um nicho entre os criminosos, onde pessoas que possuem informações internas antes que o público geral as utilizam para realizar mudanças nos lucros. 
 
 Em contraste com os dados não-supervisionados, os dados supervisionados são informações em que os pesquisadores possuem controle de quais valores representam ou não uma fraude. 
 
-Um exemplo de dados supervisionados são tabelas com informações de gastos em um cartão de crédito, onde o banco especificou previamente quais dados são considerados fraudulentos \cite{Akoglu2015} e \cite{Branco2016}. Para os dados supervisionados (onde uma boa parte das informações contém algum registro classificador como "fraude"), os algoritmos especializados são treinados utilizando aprendizado de máquina para tentar prever novos valores com o classificador desconhecido.
+Um exemplo de dados supervisionados são tabelas com informações de gastos em um cartão de crédito, onde o banco especificou previamente quais dados são considerados fraudulentos \cite{Akoglu2015} e \cite{Branco2016}. Para os dados supervisionados (onde uma boa parte das informações contém algum registro classificador como fraude), os algoritmos especializados são treinados utilizando aprendizado de máquina para tentar prever novos valores com o classificador desconhecido.
 
 Enquanto os métodos de clusterização (não supervisionados) tentam identificar padrões por não possuírem essa informação, os algoritmos de dados de classificação supervisionados realizam o treinamento sabendo quais informações são fraudulentas ou verossímeis. 
 
@@ -317,29 +312,37 @@ O problema apresentado pela utilização de dados supervisionados é a dificuldade 
 
 \cite{Pejic-Bach2010}, \cite{Wang2010} e \cite{Raj2011} analisaram trabalhos que utilizam algoritmos destinados a detectar fraudes. Com as pesquisas, constatam uma grande frequência na utilização de determinadas abordagens, como as técnicas de redes neurais, lógica \emph{fuzzy}, algoritmos genéticos, computação evolucionária (ou evolutiva), programação genética e otimização por nuvem de partículas. \cite{Raj2011} constataram, além das técnicas apresentadas anteriormente, os métodos de aprendizado por Inferência Bayesiana, Teoria de Evidência de Dempster-Shafer, \emph{BLAST-SSAHA Hybridization} e Modelo oculto de Markov.
 
-A tabela \ref{tab:tecnologias} representa as abordagens e técnicas mais utilizadas em cada situação. Todavia, é importante ressaltar que os algoritmos indicados como técnica para determinada categoria podem ser utilizados por outro método ou mesmo em conjunto.
+A Tabela \ref{tab:tecnologiasmineracao} apresenta um resumo das abordagens e técnicas de mineração de dados mais utilizadas em classificação ou clusterização (agrupamento), conforme apresentado por \cite{Abdallah2016}. Todavia, é importante ressaltar que os algoritmos indicados como técnica para determinada categoria podem ser utilizados por outro método ou mesmo em conjunto.
 
 % For tables use
 \begin{table}[h]
 	% table caption is above the table
-	\caption{Técnicas e categorias mais utilizadas. Fonte: \cite{Abdallah2016}}
-	\label{tab:tecnologias}       % Give a unique label
+	\caption{Técnicas e categorias mais utilizadas para mineração de dados. Fonte: \cite{Abdallah2016}}
+	\label{tab:tecnologiasmineracao}       % Give a unique label
 	% For LaTeX tables use
 	\begin{tabular}{lll}
 		\hline\noalign{\smallskip}
 		\textbf{Método} & \textbf{Categoria} & \textbf{Técnica}  \\
 		\noalign{\smallskip}\hline\noalign{\smallskip}
-		Supervisionado & Classificação & Árvores de decisões \\
-		&  & Redes neurais artificiais \\
+		Supervisionado & Classificação & Algoritmo genético \\
+		&  & Árvores de decisões \\
+		&  & Baseado em regras \\
+		&  & Inferência Bayesiana\\
+		&  & K-Nearest neighbours (K-NN) \\
 		&  & Modelo oculto de Markov \\
-		&  &  Inferência Bayesiana\\
+		&  & Redes neurais artificiais \\
+		&  & Support vector machine (SVM) \\
 		\noalign{\smallskip}\hline\noalign{\smallskip}
-		Não-supervisionado & Clusterização & Lógica Fuzzy \\
-		&  & K-Means (média) \\
-		&  & K-NN (vizinhos próximos) \\
+		Não-supervisionado & Clusterização & Baseado em distância \\
+		&  & K-Means \\
+		&  & Lógica Fuzzy \\
+		&  & Mistura gaussiana \\
+		&  & Principal component analysis (PCA) \\
 		\noalign{\smallskip}\hline
 	\end{tabular}
 \end{table}
+
+Além das técnicas para realizar mineração de dados, técnicas destinadas à visualização e estatística dos dados também foram comentadas pelos autores. Os algoritmos não são destinados a realizar cálculos para transformar os dados. O objetivo das técnicas de visualização e criação de estatística das instâncias é somente apresentar para o usuário uma forma de melhor compreensão dos dados. Em poucos casos, foram utilizadas análises de regressão.
 
 Para testar as técnicas e novos algoritmos, muitos autores não utilizam de dados reais, obtidos por eles, e recorrem a algum repositório de \emph{datasets}. O mais conhecido na área de mineração de dados é o \textsf{UCI Machine Learning Repository}\index{UCI Machine Learning Repository}\footnote{\url{https://archive.ics.uci.edu/ml/datasets.html}}, que contém diversos conjuntos de dados para métodos supervisionados e não-supervisionados.
 
@@ -354,7 +357,49 @@ Em casos de dados não-supervisionados, não há o campo \emph{label} do atributo, 
 	\label{fig:dadostreino}
 \end{figure}
 
-\cite{Allan2010} também indicam que é possível a maioria de cruzamento de técnicas, onde podemos executar métodos semi-supervisionados somente com informações de dados não fraudulentos, métodos supervisionados sendo aplicados em sequência e métodos supervisionados e não-supervisionados sendo utilizados em conjunto de maneira híbrida
+\cite{Allan2010} também indicam que é possível o cruzamento de técnicas, onde podemos executar métodos semi-supervisionados somente com informações de dados não fraudulentos, métodos supervisionados sendo aplicados em sequência e métodos supervisionados e não-supervisionados sendo utilizados em conjunto de maneira híbrida.
+
+\subsubsection{Tipos comuns de anomalias em dados}
+
+Focando nos métodos não-supervisionados, \cite{Ahmed2015} identificam em sua revisão da literatura em detecção de anomalias os três tipos de anomalias mais comuns.
+
+Os grupos são similares aos grupos identificados por \cite{Bansal2016}. \cite{Ahmed2015} indicam: anomalia pontual, onde um dado está fora do padrão de um conjunto de dados; a anomalia contextual, onde um dado está fora do padrão de um conjunto de dados considerando o seu contexto (usando como exemplo, novamente, o acréscimo de gastos com cartões de crédito no dia 24 de dezembro, que é considerado uma exceção por contexto pelas compras natalinas); e anormalidades coletivas, onde espécies de cartéis e conjuntos de dados são identificados fora do padrão dos demais dados.
+
+Nas representações da Figura \ref{anomalias}, podemos constatar as diferenças entre os conjuntos de anomalias. No contexto do mundo real, com dados não-fictícios, a diferença não será tão trivial para ser visualizada.
+
+\begin{figure}[!ht]
+	\centering
+	{\includegraphics[width=4cm]{imagens/outlier1.jpg}\label{outlier1}} (a)
+	\hspace{1cm} % este comando é para deixar uma distância de 1 cm entre as figuras
+	{\includegraphics[width=4cm]{imagens/outlier2.jpg}\label{outlier2}} (b)
+	\hspace{1cm} % este comando é para deixar uma distância de 1 cm entre as figuras
+	{\includegraphics[width=4cm]{imagens/outlier3.jpg}\label{outlier3}} (c)
+	\hspace{1cm} % este comando é para deixar uma distância de 1 cm entre as figuras
+	{\includegraphics[width=4cm]{imagens/outlier4.jpg}\label{outlier4}} (d)
+	\hspace{1cm} % este comando é para deixar uma distância de 1 cm entre as figuras
+	{\includegraphics[width=4cm]{imagens/outlier5.jpg}\label{outlier5}} (e)
+	\hspace{1cm} % este comando é para deixar uma distância de 1 cm entre as figuras
+	{\includegraphics[width=4cm]{imagens/outlier6.jpg}\label{outlier6}} (f)
+	\hspace{1cm} % este comando é para deixar uma distância de 1 cm entre as figuras
+	{\includegraphics[width=4cm]{imagens/outlier7.jpg}\label{outlier7}} (g)
+	
+	\caption{Tipos de anomalias} % aqui nesta legenda eu me referi às imagens anteriores para mostrar como chamá-las no texto.
+	\label{anomalias}
+\end{figure}
+
+A Figura \ref{anomalias}a apresenta o indivíduo anormal mais recorrente, que uma única instância que está com dados divergentes da maioria das outras instâncias, as quais formaram um \emph{cluster} (agrupamento). Para o especialista em detecção de fraudes, é uma tarefa relativamente simples tratar esse indivíduo.
+
+Na Figura \ref{anomalias}b, há outras instâncias similares com a instância anormal, construindo um novo agrupamento de \emph{outliers}. Caso o grupo seja relativamente grande em comparação com o conjunto normal de instâncias, o profissional responsável por detecção de anomalias pode considerar aquele um novo agrupamento, e então visualizar os dados com dois \emph{clusters}.
+
+Para considerar um grupo diferente do agrupamento geral, a distância entre os elementos nos grupos também é considerada, sendo chamada de densidade. A diferença de densidade pode ser visualizada na Figura \ref{anomalias}c, onde um grupo está próximo de outro, porém cada instância do grupo menor está mais próxima do centro.
+
+Com exemplo anterior, ao remover a indicação de um novo conjunto de anormalidades por densidade, notamos que o agrupamento está próximo ao agrupamento principal. Conforme demonstra a Figura \ref{anomalias}d, isso gera possibilidades para o profissional de detecção de fraudes generalizar os grupos e tratá-los da mesma maneira, como um só.
+
+Os autores \cite{Ahmed2015} indicam a possibilidade de utilizar um conjunto de dados para identificar limites classificadores, porém, é necessário eliminar manualmente os \emph{outliers} do conjunto. Como pode ser visualizado na Figura \ref{anomalias}e, o padrão de identificação é criado a partir dos dados atuais, e então pode ser aplicado em novos dados. Todas as instâncias que estiverem fora dos limites (em vermelho) serão consideradas anomalias. Caso um dado esteja presente entre os dois agrupamentos, conforme a representação da figura, ele será considerado normal, pois o grupo menor não foi removido para a criação do padrão.
+
+Finalmente, uma das tarefas que geralmente está presente nos algoritmos de agrupamento (métodos não-supervisionados) é indicar previamente o número de grupos que os dados possuem. No algoritmo \emph{K-means}, este número é indicado pela letra k. Portando, a complexidade computacional dessa técnica é baixa, ocorrendo na ordem O(n), onde n representa o número de pontos no conjunto de dados \cite{Ahmed2015}.
+
+Nas figuras \ref{anomalias}f e \ref{anomalias}g, visualizamos o mesmo \emph{dataset} com a separação em três e dois grupos, respectivamente. Dependendo do contexto, as duas formas podem estar corretas. Nessa situação, é total responsabilidade do indivíduo conhecedor dos dados indicar o número k de \emph{clusters} que as informações possuem. Para tentar solucionar o problema, o algoritmo \emph{X-means} se propõe a identificar o número de grupos de uma maneira automática, porém é menos eficiente do que uma pessoa que conheça o conjunto dos dados \cite{Ahmed2015}.
 
 \subsection{Áreas de detecção de fraudes}
 
@@ -560,9 +605,33 @@ O tempo de processamento dos algoritmos pode ser ignorado para alguns casos, com
 
 Um dos fatores que contribui com o aumento do processamento computacional é a maldição da dimensionalidade, onde muitos atributos desprezíveis no conjunto de dados levam o algoritmo a ter menor eficiência \cite{Hodge2004}.
 
-A tarefa de selecionar os atributos que levarão para o algoritmo algum acréscimo de informação para um melhor resultado deve executada por um humano. Nenhum algoritmo de pré-processamento é inteligente o suficiente para compreender os dados de uma base e selecionar automaticamente os dados que achar relevante. 
+A tarefa de selecionar os atributos que levarão para o algoritmo algum acréscimo de informação para um melhor resultado deve executada por um humano. Nenhum algoritmo de pré-processamento é inteligente o suficiente para compreender os dados de uma base e selecionar automaticamente os dados que achar relevante de uma forma melhor que uma pessoa experiente na área. 
 
-Portanto, na etapa de pré-processamento das informações, uma pessoa que possui conhecimento sobre os dados da base pode realizar a seleção de atributos. A revisão sistemática deste trabalho não encontrou na literatura estudos específicos para orientar a etapa de pré processamento. Das ferramentas mais utilizada para mineração de dados (Weka\index{Weka}\footnote{\url{http://www.cs.waikato.ac.nz/ml/weka/}} e linguagem R\index{R}\footnote{\url{https://www.r-project.org/}}), nenhuma apresenta um \emph{framework} dedicado eficiente para pré-processamento.
+Na etapa da seleção de atributos, a dificuldade está em nivelar o tamanho do \emph{dataset} para ficar pequeno o suficiente para que tenha sentido ao humano que irá manuseá-lo e ao algoritmo que irá computá-lo em tempo hábil e grande o suficiente para abstrair a maior parte das possibilidades.
+
+Conforme demonstra a Figura \ref{fig:dadosnormaisefraudulentos}, a porcentagem de dados fraudulentos em um \emph{dataset} é bem menor que a porcentagem de dados verossímeis. Por esta razão, se ocorrer na etapa de seleção de atributos o descarte de uma parte significante de dados fraudulentos, as instâncias não terão grande visibilidade, tanto em algoritmos supervisionados quanto não-supervisionados.
+
+Os dados representados na Figura \ref{fig:dadosnormaisefraudulentos} são de um contexto real, originários de compras virtuais realizadas por clientes em um site da internet.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagens/dadosnormaisefraudulentos.jpg}
+	\caption{Porcentagem de instâncias normais e fraudulentas num \emph{dataset} real. Fonte: \cite{Abdallah2016}}
+	\label{fig:dadosnormaisefraudulentos}
+\end{figure}
+
+Portanto, na etapa de pré-processamento das informações, uma pessoa que possui conhecimento sobre os dados da base pode realizar a seleção de atributos. A revisão sistemática deste trabalho não encontrou na literatura estudos específicos para orientar a etapa de pré processamento. Das ferramentas gratuitas e de código aberto mais utilizada para mineração de dados (Weka\index{Weka}\footnote{\url{http://www.cs.waikato.ac.nz/ml/weka/}} e linguagem R\index{R}\footnote{\url{https://www.r-project.org/}}), nenhuma apresenta um \emph{framework} dedicado eficiente para pré-processamento. Além das ferramentas gratuitas, \cite{Ahmed2015} citam eu seu trabalho sobre o software proprietário \emph{SAS}\index{SAS}\footnote{\url{http://www.sas.com/en_us/industry/banking/fraud-management.html}}, que possui módulos específicos para detecção de fraudes. 
+
+O trabalho de revisão sistemática na área de detecção de fraudes que mais se assemelhou ao propósito deste trabalho foi o elaborado por \cite{Ahmed2015}. Nele, os autores se focaram em detecção de fraudes em sistemas financeiros e compreenderam que a maioria dos casos ocorrem com cargas de dados não-supervisionadas e com muito ruído, por serem do contexto real.
+
+Os autores elencaram que a utilização de dados do mundo real é importante, pois os resultados de algoritmos são voláteis em dados sintéticos. Na Figura \ref{fig:dadosintetico}, podemos perceber que ao aplicar os algoritmos KNN, LOF, CBLOF e LDCOF em bases de dados sintéticas e em bases de um contexto real (no caso do exemplo, foram utilizadas as informações de tráfego de rede), os resultados se demonstram muito mais eficientes em dados gerados de uma maneira mais controlada.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.8\textwidth]{imagens/dadosintetico.jpg}
+	\caption{Comparação entre algoritmos executando em bases do mundo real e bases geradas de maneiras sintética. Fonte: \cite{Ahmed2015}}
+	\label{fig:dadosintetico}
+\end{figure}
 
 \section{Conclusão}
 \label{sec:6}
