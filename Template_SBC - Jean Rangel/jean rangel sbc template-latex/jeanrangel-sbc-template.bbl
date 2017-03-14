@@ -169,6 +169,11 @@ Sommerville, I. (2011).
 \newblock {\em {Engenharia de Software}}.
 \newblock Pearson Brasil, 9th edition.
 
+\bibitem[Tan et~al. 2005]{Tan:2005:IDM:1095618}
+Tan, P.-N., Steinbach, M., and Kumar, V. (2005).
+\newblock {\em Introduction to Data Mining, (First Edition)}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., Boston, MA, USA.
+
 \bibitem[Wang 2010]{Wang2010}
 Wang, S. (2010).
 \newblock {A comprehensive survey of data mining-based accounting-fraud
