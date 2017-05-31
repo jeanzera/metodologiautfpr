@@ -37,10 +37,15 @@
 
 \begin{abstract}
   Fraudulent activity is an action of a person or a group of people aiming to gain resources in an illicit manner. This article presents a systematic review of the literature in the area of fraud detection to identify the techniques used. These results suggest that most authors divide the problem into areas where fraud occurs most often. The most cited areas were frauds on credit cards, insurance and telecommunication systems. Within each area, specific computational techniques are used for each situation. This work identified, categorized and presented the most commom technical areas guided by previous studies. The main techniques were identified using supervised and unsupervised algorithms. As a contribution, this article presents a discussion on the subject, where the possibility of future research was found as benchmarks to compare tests of algorithms and tools used to locate fraud in the public sector applied, not well covered in the studies found.
+  
+  Keywords: Fraud detection, data mining, anomaly detection, outlier detection, public expenditure.
+   
 \end{abstract}
      
 \begin{resumo} 
   Uma atividade fraudulenta é uma ação realizada por uma pessoa ou um grupo de pessoas visando obter vantagem individual sobre determinado serviço ou recurso. Este artigo apresenta uma revisão sistemática na literatura na área de detecção de fraudes e identificar os tipos e técnicas empregadas. Os resultados obtidos sugerem que a maior parte dos autores divide o problema em áreas nas quais as fraudes ocorrem com maior frequência. As áreas mais citadas foram fraudes em cartões de crédito, em seguradoras e em sistemas de telecomunicação. Dentro de cada área, técnicas específicas da computação são utilizadas para cada situação. Este trabalho identificou, categorizou e apresentou as técnicas e áreas mais abordadas pelos estudos anteriores. As principais técnicas constatadas foram as que utilizam algoritmos supervisionados e não-supervisionados. Como contribuição, este artigo apresenta uma discussão sobre o assunto, no qual foi constatada a possibilidade de futuras investigações, como propor benchmarks para padronizar os testes aplicados nos algoritmos e utilizar ferramentas para localizar fraudes em órgãos públicos, pouco abordados nos estudos encontrados.
+  
+  Palavras chave: Detecção de fraudes, mineração de dados, detecção de anomalias, detecção de \emph{outliers}, gasto público. 
 \end{resumo}
 
 
@@ -93,7 +98,7 @@ A Figura \ref{fig:kdd} apresenta a compreensão de \cite{Fayyad:1996:DMK:257938.2
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=1\textwidth]{imagens/kdd.jpg}
+	\includegraphics[width=0.7\textwidth]{imagens/kdd.jpg}
 	\caption{Mineração de dados para ganho de informações. Fonte: \cite{Fayyad:1996:DMK:257938.257942}}
 	\label{fig:kdd}
 \end{figure}
@@ -102,7 +107,7 @@ Na Figura \ref{fig:kdd}, temos um processo evolutivo para a mineração de dados p
 
 O maior processamento computacional do processo, em comparação entre as seis etapas, ocorre na etapa de mineração de dados, na qual algoritmos complexos são executados para gerar informações. Todavia, o maior gasto temporal se encontra nas outras etapas, pois torna-se necessário o trabalho manual para trabalhar com os dados.
 
-A mineração de dados foi utilizada pela primeira vez de maneira empírica em setores do comércio. As empresas possuíam dados de compras de seus clientes e, com o cruzamento das informações, conseguiam predizer o perfil do usuário. 
+A mineração de dados foi utilizada pela primeira vez de maneira empírica em setores do comércio. As empresas possuíam dados de compras de seus clientes e, com o cruzamento das informações, conseguiam predizer o perfil do usuário \cite{Tan:2005:IDM:1095618}. 
 
 Em uma rede de supermercados, o caixa eletrônico registra todos os produtos que os clientes compram na sexta-feira e, como padrão, muitos adquirem itens em comum. Como estratégia de \emph{marketing}, o supermercado pode gerar mais lucro após possuir o conhecimento nesse novo perfil identificado, pois pode usar a informação a seu favor.
 
@@ -260,7 +265,7 @@ Conforme apresenta a Figura \ref{fig:diagramaexlusaoartigos}, no início da revis
 \section{Estado da arte}
 \label{sec:4}
 
-Esta Seção irá apresentar os estudos de autores na área de detecção de fraudes. Conforme descrito na Seção de metodologia, foram considerados artigos que realizaram uma revisão sistemática na literatura sobre o tema.
+Esta Seção irá apresentar os estudos de autores na área de detecção de fraudes. Conforme descrito na Seção de metodologia, foram considerados artigos que realizaram uma revisão sistemática na literatura sobre o tema, pois a área apresenta uma grande quantia de trabalhos relacionados.
 
 \subsection{Revisões sistemáticas gerais em detecção de fraudes}
 
@@ -294,6 +299,8 @@ Categorizando os \emph{outliers}, os autores denominam: \emph{Point Outliers, Co
 \cite{Bansal2016} indica que para detectá-los, as formas mais difundidas na literatura são: \emph{Distance based outlier detection, Clustering based outlier detection, Density based outlier detection} e \emph{Depth based outlier detection}.
 
 \subsection{Técnicas de detecção de fraudes}
+
+A literatura sobre a área de mineração de dados dedicada à detecção de fraudes apresenta técnicas supervisionadas e não-supervisionadas. Alguns autores indicam a possibilidade de técnicas semi-supervisionadas, porém, no último caso, a técnica irá receber algum tratamento com características similar à algum dos dois pontos distintos.
 
 \subsubsection{Mineração de dados por aprendizado supervisionado (algoritmos de classificação) e não-supervisionado (algoritmos de agrupamento)}
 
@@ -342,7 +349,7 @@ Os dados representados na Figura \ref{fig:dadosnormaisefraudulentos} são de um c
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=0.7\textwidth]{imagens/dadosnormaisefraudulentos.jpg}
+	\includegraphics[width=0.6\textwidth]{imagens/dadosnormaisefraudulentos.jpg}
 	\caption{Porcentagem de instâncias normais e fraudulentas num \emph{dataset} real. Fonte: \cite{Abdallah2016}}
 	\label{fig:dadosnormaisefraudulentos}
 \end{figure}
@@ -353,7 +360,7 @@ Realizando uma generalização, a Figura \ref{fig:dadostreino}, proposta por \cite
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=0.7\textwidth]{imagens/dadostreino.jpg}
+	\includegraphics[width=0.9\textwidth]{imagens/dadostreino.jpg}
 	\caption{Distribuição padrão na característica dos dados. Fonte: \cite{Allan2010}}
 	\label{fig:dadostreino}
 \end{figure}
@@ -518,7 +525,7 @@ Outra razão do aparecimento dos sistemas de telecomunicação, auditorias e segura
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=1\textwidth]{imagens/areasfraude.jpg}
+	\includegraphics[width=0.9\textwidth]{imagens/areasfraude.jpg}
 	\caption{Áreas com grande concentração de fraudes. Fonte: \cite{Abdallah2016}}
 	\label{fig:areasfraude}
 \end{figure}
@@ -742,7 +749,7 @@ Os autores elencaram que a utilização de dados do mundo real é importante, pois 
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=0.8\textwidth]{imagens/dadosintetico.jpg}
+	\includegraphics[width=0.9\textwidth]{imagens/dadosintetico.jpg}
 	\caption{Comparação entre algoritmos executando em bases do mundo real e bases geradas de maneiras sintética. Fonte: \cite{Ahmed2015}}
 	\label{fig:dadosintetico}
 \end{figure}
